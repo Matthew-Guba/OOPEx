@@ -56,7 +56,7 @@ void Group::set(int index, Student st2) {
 	}
 }
 int Group::getCount() {
-
+	return count;
 }
 string Group::toString() {
 	string s = "";
