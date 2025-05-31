@@ -1,10 +1,11 @@
-#include"Queue.h"
+#include "Queue.h"
 
 int main() {
 	Queue queue;
 	int element;
 
-	cout << "Input elemnts, to stop use 0 " << endl;
+	cout << "Input elements: ";
+
 	do {
 		cin >> element;
 		if (element != 0) {
@@ -12,12 +13,11 @@ int main() {
 		}
 	} while (element != 0);
 
-		cout << "Queue: " << endl;
+	cout << "Queue:\n";
 
-		while (!queue.isEmpty()) {
-			cout << queue.dequeue() << " ";
-		}
+	while (!queue.isEmpty()) {
+		cout << queue.dequeue() << " ";
+	}
 
-		return 0;
+	return 0;
 }
-

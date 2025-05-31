@@ -1,13 +1,12 @@
 #include "Queue.h"
 
 Queue::Queue() {
-	size = 0;
 	queue = nullptr;
+	size = 0;
 }
 
 Queue::~Queue() {
 	if (queue != nullptr) {
-
 		delete[] queue;
 	}
 }
@@ -20,8 +19,8 @@ void Queue::enqueue(int element) {
 	}
 	else {
 		int* temp = new int[size + 1];
-
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < size; i++)
+		{
 			temp[i] = queue[i];
 		}
 
@@ -39,9 +38,11 @@ int Queue::dequeue() {
 		size--;
 		int* temp = new int[size];
 
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < size; i++)
+		{
 			temp[i] = queue[i + 1];
 		}
+
 		delete[] queue;
 		queue = temp;
 
@@ -55,12 +56,14 @@ int Queue::peek() {
 	if (!isEmpty()) {
 		return queue[0];
 	}
+
 	return 0;
 }
 
 int Queue::getSize() {
 	return size;
 }
+
 bool Queue::isEmpty() {
 	return size == 0;
 }
@@ -70,9 +73,11 @@ string Queue::toString() {
 
 	if (!isEmpty()) {
 		s = "";
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < size; i++)
+		{
 			s += to_string(queue[i]) + " ";
 		}
 	}
+
 	return s;
 }

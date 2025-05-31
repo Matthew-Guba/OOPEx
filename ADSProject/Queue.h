@@ -1,13 +1,13 @@
 #pragma once
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 using namespace std;
 
 class Queue
 {
 private:
-	int size;
 	int* queue;
+	int size;
 public:
 	Queue();
 	~Queue();
@@ -18,4 +18,3 @@ public:
 	bool isEmpty();
 	string toString();
 };
-
