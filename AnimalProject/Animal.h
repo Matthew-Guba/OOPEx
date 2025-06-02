@@ -9,7 +9,5 @@ public:
 	Animal(string name) : name(name) {}
 
 	// overriding
-	virtual void getVoice() {
-		cout << "..." << endl;
-	}
+	virtual void getVoice() = 0;
 };
