@@ -32,7 +32,7 @@ public:
 		string s = "";
 		s += "Rectangle: top-left point (" + to_string(topLeft.getX()) + ", "
 			+ to_string(topLeft.getY()) + "), width: " + to_string(width)
-			+ ", height: " + to_string(height);
+			+ ", height: " + to_string(height) + "\n";
 		return s;
 	}
 

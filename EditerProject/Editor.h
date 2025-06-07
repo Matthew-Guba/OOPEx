@@ -1,13 +1,13 @@
 #pragma once
 #include "Figure.h"
 
-class Editer
+class Editor
 {
 public:
 	string printAllFigures(Figure** figures, int size) {
 		string s = "";
 		for (int i = 0; i < size; i++) {
-			s += figures[i]->printInfo() + "\n";
+			s += figures[i]->printInfo();
 		}
 		return s;
 	}

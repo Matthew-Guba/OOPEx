@@ -56,7 +56,7 @@
     <ClInclude Include="Rectangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Editer.h">
+    <ClInclude Include="Editor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

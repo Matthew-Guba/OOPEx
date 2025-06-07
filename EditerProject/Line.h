@@ -29,7 +29,7 @@ public:
     string printInfo() override {
         string s = "";
         s += "Line: from (" + to_string(start.getX()) + to_string(start.getY())
-            + "), to (" + to_string(end.getX()) + to_string(end.getY());
+            + "), to (" + to_string(end.getX()) + to_string(end.getY()) + ")\n";
         return s;
     }
     string getType() override {
